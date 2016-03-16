@@ -1,0 +1,112 @@
+.site-header {
+  position: relative;
+  background-image: linear-gradient(to top, #010101 0%, #2c2c2b 100%);
+  h1,p {
+    display: inline-block;
+    margin: 20px 2px;
+    float: left;
+    font-weight: 700;
+    font-size: (24/16)*1rem;
+    a{
+      color: white;
+
+    }
+  }
+
+  .hamburger, .cross {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding: 0 25px;
+    color: #f1f1f1;
+    z-index: 99999;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+  }
+  .hamburger {
+    line-height: 45px;
+    font-size: 1.5rem;
+  }
+  .cross {
+    font-size: 3rem;
+    height: 45px
+  }
+  .top-nav {
+    .menu-primary-menu-container {
+      z-index: 999;
+      font-weight: bold;
+      font-size: 0.8em;
+      width: 100%;
+      background: black;
+      position: absolute;
+
+
+
+      li {
+        border-bottom: #1d1f20 1px solid;
+        text-align: center;
+        &:hover {
+          background: #181818;
+                }
+
+       a {
+          display: block;
+          padding: 2px 0;
+          width: 100%;
+          height: 100%;
+          margin: 10px 5px;
+          color:#FFD500;
+          font-size: (16/16)*1rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          i:hover{
+            font-size: (20/16)*1rem;;
+          }
+
+
+        }
+      }
+
+    }
+
+
+
+  }
+  form {
+
+
+    .fa-search{
+      cursor: pointer;
+    }
+    .search-input {
+      margin-bottom: 10px;
+      float: left;
+      position: relative;
+      input[type="search"] {
+        background-color: #2c2c2b;
+        border: 1px solid rgba(121, 120, 118, 0.71);
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.26);
+        padding: 20px 10px 10px;
+        width: 260px;
+        color: #a7a7a4;
+        font-family: $second-font;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+      }
+      button[type="submit"]{
+        position: absolute;
+        top: 6px;
+        right: 0;
+        background-color: transparent;
+        border-left: 1px solid rgba(121, 120, 118, 0.71);
+        &:before{
+          color: #797876;
+        }
+      }
+    }
+  }
+}
